@@ -1,0 +1,41 @@
+name: Deploy Jupyter Book to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  # Link cuối cùng sẽ là https://<tài-khoản>.github.io/<tên-repo>/
+  BASE_URL: /${{ github.event.repository.name }}
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Cài Jupyter Book
+        run: pip install "jupyter-book>=2"
+      - name: Build book
+        run: jupyter book build --html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_build/html
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,18 @@
+# Cuối đồ án: chạy `pip freeze` và ghi version cụ thể cho từng thư viện bên dưới (đề yêu cầu).
+jupyter-book>=2
+jupyterlab
+ipykernel
+numpy
+pandas
+scipy
+statsmodels
+scikit-learn
+matplotlib
+seaborn
+missingno
+imbalanced-learn
+nltk
+wordcloud
+gensim
+tokenizers
+datasets

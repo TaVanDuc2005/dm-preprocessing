@@ -1,0 +1,18 @@
+# Cấu hình Jupyter Book (MyST). Tài liệu: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: Tiền xử lý dữ liệu - Adult Census Income và IMDB 50K
+  description: Đồ án cá nhân môn Khai phá dữ liệu, HCMUS
+  authors:
+    - name: Tạ Văn Đức
+  github: https://github.com/TaVanDuc2005/dm-preprocessing.git
+  toc:
+    - file: book/index.md
+    # Các chương sẽ được thêm dần ở các bước sau:
+    # - file: book/01_EDA_tabular.ipynb
+    # - file: book/02_preprocessing_tabular.ipynb
+    # - file: book/06_text_preprocessing.ipynb
+    # - file: book/report.md
+site:
+  template: book-theme
+  title: Tiền xử lý dữ liệu
