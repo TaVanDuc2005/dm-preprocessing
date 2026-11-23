@@ -31,7 +31,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Cài Jupyter Book
-        run: pip install "jupyter-book>=2"
+        run: pip install "jupyter-book==2.1.7"
       - name: Build book
         run: jupyter book build --html
       - uses: actions/upload-pages-artifact@v3

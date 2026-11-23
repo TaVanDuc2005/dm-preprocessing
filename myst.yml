@@ -5,9 +5,13 @@ project:
   description: Đồ án cá nhân môn Khai phá dữ liệu, HCMUS
   authors:
     - name: Tạ Văn Đức
-  github: https://github.com/TaVanDuc2005/dm-preprocessing.git
+  github: https://github.com/TaVanDuc2005/dm-preprocessing
+  # Không quét thư mục dữ liệu khi build
+  exclude:
+    - data/**
   toc:
     - file: book/index.md
+    - file: book/00_data.ipynb
     # Các chương sẽ được thêm dần ở các bước sau:
     # - file: book/01_EDA_tabular.ipynb
     # - file: book/02_preprocessing_tabular.ipynb

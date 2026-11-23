@@ -17,6 +17,7 @@
 Trang này là bản khung. Các chương sẽ được bổ sung dần và mục lục sẽ được cập nhật theo.
 ```
 
+0. Dữ liệu và kiểm tra điều kiện đề bài
 1. EDA dữ liệu bảng
 2. Tiền xử lý dữ liệu bảng
 3. Tiền xử lý dữ liệu văn bản
