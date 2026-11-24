@@ -12,8 +12,8 @@ project:
   toc:
     - file: book/index.md
     - file: book/00_data.ipynb
+    - file: book/01_EDA_tabular.ipynb
     # Các chương sẽ được thêm dần ở các bước sau:
-    # - file: book/01_EDA_tabular.ipynb
     # - file: book/02_preprocessing_tabular.ipynb
     # - file: book/06_text_preprocessing.ipynb
     # - file: book/report.md
