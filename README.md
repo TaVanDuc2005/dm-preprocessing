@@ -43,15 +43,16 @@ Book hiển thị output đã lưu sẵn trong notebook. Vì vậy cần chạy 
 
 ```
 book/
-  index.md              trang giới thiệu
-  00_data.ipynb         tải dữ liệu và kiểm tra điều kiện đề bài
-  01_EDA_tabular.ipynb  EDA dữ liệu bảng: phân phối, tương quan, dữ liệu thiếu
-  utils/                code dùng chung (cấu hình, tải dữ liệu)
+  index.md                        trang giới thiệu
+  00_data.ipynb                   tải dữ liệu và kiểm tra điều kiện đề bài
+  01_EDA_tabular.ipynb            EDA dữ liệu bảng: phân phối, tương quan, dữ liệu thiếu
+  02_preprocessing_tabular.ipynb  tiền xử lý dữ liệu bảng (6 kỹ thuật), khoảng 17 phút để chạy
+  utils/                          code dùng chung (cấu hình, tải dữ liệu)
 data/
-  raw/                  dữ liệu gốc (không push)
-  processed/            dữ liệu sau tiền xử lý (không push)
-myst.yml                cấu hình book và mục lục
-requirements.txt        danh sách thư viện
+  raw/                            dữ liệu gốc (không push)
+  processed/                      dữ liệu sau tiền xử lý (không push)
+myst.yml                          cấu hình book và mục lục
+requirements.txt                  danh sách thư viện
 ```
 
 ## Tài nguyên ngoài
